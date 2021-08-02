@@ -45,7 +45,7 @@ namespace MvcKamp.Controllers
             }
             return View();
         }
-        
+
         public ActionResult DeleteCategory(int id)
         {
             var categoryvalue = cm.GetByID(id);
@@ -58,7 +58,7 @@ namespace MvcKamp.Controllers
         public ActionResult EditCategory(int id)
         {
             var categoryvalue = cm.GetByID(id);
-            
+
             return View(categoryvalue);  //değişkenle beraber gönder
         }
 
@@ -68,7 +68,6 @@ namespace MvcKamp.Controllers
             cm.CategoryUpdate(p); //p den gelen degeri update edicem.
             return RedirectToAction("Index");
 
-            
         }
 
     }
