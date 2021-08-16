@@ -79,6 +79,22 @@
     <Compile Include="Migrations\202108022056503_mig_wrter_add.designer.cs">
       <DependentUpon>202108022056503_mig_wrter_add.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202108031324290_mig_imgsiz.cs" />
+    <Compile Include="Migrations\202108031324290_mig_imgsiz.designer.cs">
+      <DependentUpon>202108031324290_mig_imgsiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108031341176_mig.cs" />
+    <Compile Include="Migrations\202108031341176_mig.designer.cs">
+      <DependentUpon>202108031341176_mig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108141434043_mig_contentstatus.cs" />
+    <Compile Include="Migrations\202108141434043_mig_contentstatus.designer.cs">
+      <DependentUpon>202108141434043_mig_contentstatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108141437416_mig_headingstatus.cs" />
+    <Compile Include="Migrations\202108141437416_mig_headingstatus.designer.cs">
+      <DependentUpon>202108141437416_mig_headingstatus.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -101,6 +117,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202108022056503_mig_wrter_add.resx">
       <DependentUpon>202108022056503_mig_wrter_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108031324290_mig_imgsiz.resx">
+      <DependentUpon>202108031324290_mig_imgsiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108031341176_mig.resx">
+      <DependentUpon>202108031341176_mig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108141434043_mig_contentstatus.resx">
+      <DependentUpon>202108141434043_mig_contentstatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108141437416_mig_headingstatus.resx">
+      <DependentUpon>202108141437416_mig_headingstatus.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
