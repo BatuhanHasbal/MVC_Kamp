@@ -22,5 +22,9 @@ namespace MvcKamp.Controllers
             var contentvalues = cm.GetListByHeadingID(id);
             return View(contentvalues);
         }
+        public PartialViewResult ContentMenu()
+        {
+            return PartialView();
+        }
     }
 }
