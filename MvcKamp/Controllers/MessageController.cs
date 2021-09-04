@@ -15,6 +15,8 @@ namespace MvcKamp.Controllers
     {
         MessageManager mm = new MessageManager(new EfMessageDal());
         MessageValidator messagevalidator = new MessageValidator();
+
+        [Authorize]
         public ActionResult Inbox()
         {
             var messageList = mm.GetListInbox();
@@ -63,6 +65,19 @@ namespace MvcKamp.Controllers
                 }
             }
             return View();
+        }
+
+        public ActionResult DeleteMessage(int id)
+        {
+            var MessageValue = mm.GetByID(id);
+            MessageValue.Status = false;
+            mm.MessageDelete(MessageValue);
+            return RedirectToAction("Inbox");
+        }
+        public ActionResult TrushMessage()
+        {
+            var messageList = mm.GetListInbox();
+            return View(messageList);
         }
     }
 }

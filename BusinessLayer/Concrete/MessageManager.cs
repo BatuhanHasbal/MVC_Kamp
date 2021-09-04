@@ -41,9 +41,9 @@ namespace BusinessLayer.Concrete
             _messageDal.Insert(message);
         }
 
-        public void Messageelete(Message message)
+        public void MessageDelete(Message message)
         {
-            throw new NotImplementedException();
+            _messageDal.Update(message);
         }
        
     }
