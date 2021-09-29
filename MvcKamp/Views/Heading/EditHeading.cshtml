@@ -9,17 +9,17 @@
 @using (Html.BeginForm("EditHeading", "Heading", FormMethod.Post))
 {
 <div class="form-group">
-    @Html.Label("Başlık ID")
+    @*@Html.Label("Başlık ID")
     @Html.TextBoxFor(x => x.HeadingID, new { @class = "form-control" })
-    <br />
+    <br />*@
     @Html.Label("Başlık Adı")
     @Html.TextBoxFor(x => x.HeadingName, new { @class = "form-control" })
     <br />
     @Html.Label("Tarih")
-    @Html.TextBoxFor(x => x.HeadingDate, new { @class = "form-control" })
+    @Html.TextBoxFor(x => x.HeadingDate, "{0:d MMM yyyy}", new { @class = "form-control" })
     <br />
     @Html.Label("Yazar ID")
-    @Html.TextBoxFor(x => x.WriterID, new { @class = "form-control" })
+    @Html.TextBoxFor(x => x.Writer.WriterName, new { @class = "form-control" })
     <br />
     @Html.Label("Kategorisi")
     @Html.DropDownListFor(x => x.CategoryID, (List<SelectListItem>)ViewBag.vlc, new { @class = "form-control" })
